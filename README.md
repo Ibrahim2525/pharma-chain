@@ -1,73 +1,60 @@
-# Pharma-Chain :pill:
+# Supply-Chain :pill:
 
-A supply chain for the safe distribution of medicines using Blockchain and AI.
-
-## ⏯️ Explanation + Demo Video
-
-<a href="https://www.youtube.com/watch?v=uQZH6UH1lyY"><img src="https://img.youtube.com/vi/uQZH6UH1lyY/0.jpg" height="500px" width="700px"/></a>
+Supply Chain Pharmaceutique basée Blockchain :
+Traçabilité et Réduction de la Contrefaçon des
+Médicaments
 
 ## ✨ Motivation
 <p align="justify">
-At present, counterfeit drugs pose a serious threat as it is difficult for people to know the true value of purchased medicines due to a significant lack of transparency in the current system. Also, tampering within the supply chain is difficult to investigate when suspicion of illegal or unethical practices. 
+Dans notre étude, nous avons choisi de nous concentrer sur la traçabilité des médicaments
+au sein de la supply chain pharmaceutique. Plusieurs systèmes de traçabilité existent pour
+lutter contre les médicaments contrefaits, tels que les codes QR, les codes-barres et les
+puces RFID. Cependant, l’utilisation de la technologie de la blockchain présente plusieurs
+avantages par rapport à ces options. Tout d’abord, contrairement aux codes QR et aux
+49
+codes-barres, la blockchain offre un stockage décentralisé et inviolable des informations.
+Cela garantit la sécurité des données relatives aux médicaments, rendant plus difficile la
+falsification ou la contrefaçon des informations. De plus, un système de traçabilité basé
+sur la blockchain permet une traçabilité complète de la supply chain des médicaments, de
+la production à la distribution. Cette approche facilite l’identification rapide des produits
+contrefaits, ce qui permet leur retrait du marché et contribue ainsi à la protection de la
+santé des patients. Par ailleurs, un système de traçabilité basé sur la blockchain favorise
+la transparence et la responsabilité. Les informations enregistrées sur la blockchain sont
+accessibles à toutes les parties prenantes de la supply chain, renforçant ainsi la confiance
+dans le système de santé et garantissant une meilleure qualité et authenticité des médicaments.
+Enfin, un système de traçabilité basé sur la blockchain offre une efficacité accrue pour
+les organismes de réglementation. Il leur permet de surveiller plus efficacement la chaîne
+d’approvisionnement des médicaments et de s’assurer que les normes de qualité et de
+sécurité sont respectées.En résumé, l’utilisation de la technologie de la blockchain pour
+la traçabilité des médicaments présente des avantages significatifs en termes de sécurité,
+de traçabilité, de transparence et d’efficacité pour lutter contre le trafic de médicaments
+contrefaits et garantir la qualité des produits pharmaceutiques. 
 </p>
 
 ## ⚡ Our Solution
 <p align="justify">
-Our solution is an amalgamation of two powerful technologies - Blockchain and AI. Blockchain is an open, distributed ledger that can efficiently record transactions between two parties in a verifiable and permanent way. Since blockchains are decentralized, distributed, transparent, and immutable, they can easily solve counterfeit medicines. AI in pharmacology helps improve customer service, loyalty and enables easy access to blockchain-based medical intelligence. 
-</p>
-<p align="justify">
-This project proposes a system that uses blockchain and AI for the safe supply of medical drugs throughout the supply chain. Each product within the chain can be transferred between authenticated entities of the chain using an event request-response mechanism. All transactions between entities are recorded into the blockchain using smart contracts with the help of which a product can be traced to its source. We built a Rasa chatbot integrated into a Flutter app enabling ordering, tracing back medicines, and enhancing blockchain-based credit evaluation. A DApp was then developed using React Framework. The smart contracts were deployed on a local blockchain provided by Ganache. Using Web3.js and Truffle framework, DApp is connected to the blockchain. The experimental results show that our solution is feasible and comparatively more secure than existing systems.
+La blockchain peut jouer un rôle clé en permettant de suivre les mouvements des médicaments tout au long de la supply chain pharmaceutique, contribuant ainsi à lutter contre le
+trafic de faux médicaments. Pour cela, nous avons proposé un système de traçabilité basé
+sur la blockchain. Ce système est principalement composé de trois niveaux essentiels :
+▶ Le premier niveau comprend tous les acteurs du système, tels que l’autorité de santé,
+le fournisseur, le fabricant, le grossiste, le transporteur, la pharmacie, les contrôleurs
+de qualité(CQ) et les contrôleurs de marchandise(CM).
+▶ Le deuxième niveau comprend les smart contracts intégrés dans cette proposition.
+Ils jouent un rôle essentiel pour faciliter l’accès à la blockchain en permettant l’enregistrement des données relatives aux acteurs de la supply chain pharmaceutique,
+ainsi que des informations détaillées sur les matières premières et les médicaments.
+L’objectif principal de cette approche est d’assurer une traçabilité complète des médicaments, depuis leur stade de matière première jusqu’à leur état final de médicament
+prêt à être livré. Les smart contracts permettent de suivre et de vérifier chaque étape
+du processus de fabrication et de livraison des matières premières et des médicaments.
+50
+▶ Le troisième niveau comprend trois couches principales. Tout d’abord, la couche
+Interface est responsable de l’affichage des informations à l’utilisateur, de la collecte
+des entrées utilisateur et de la gestion des interactions entre l’utilisateur et le système.
+Ensuite, il y a la couche API qui permet d’accéder aux fonctionnalités du système
+et d’interagir avec lui. Cette couche agit comme un intermédiaire entre la couche
+Interface et la couche de données. Enfin, il y a la couche de données, qui gère la
+sauvegarde et la récupération des données 
 </p>
 
 ## 💻 System Overview
-<img src="assets/Blockchain Supply Chain.jpeg"/>
-
-## 👀 Getting Started
-
-### To deploy the Smart Contract
-
-1. Install Ganache and create a workspace.
-2. Install Truffle npm package globally by running ```npm install -g truffle```.
-3. In the `truffle-config.js` file update the `from:` address to an address from your Ganache workspace.
-4. Run ```truffle migrate --reset``` from the command line to deploy the smart contract to the blockchain.
-5. Download Metamask Chrome extension for the browser to help interaction between the application and the blockchain.
-
-### To run React development server
-
-```bash
-cd blockchain
-npm install
-npm start
-```
-
-### To run Node.js server
-```bash
-cd server
-npm install
-npm start
-```
-
-
-## :octocat: Project GitHub Links:
-- <a href="https://github.com/sherwyn11/Pharma-Chain">Smart Contracts for Blockchain + Frontend + Backend</a>
-- <a href="https://github.com/Darlene-Naz/pharma-assistant">RASA Chatbot</a>
-- <a href="https://github.com/Darlene-Naz/MediBot">Flutter Application</a>
-
-## 🔥 Our Published Paper Link:
-<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3852034" target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3852034</a>
-
-## :busts_in_silhouette: Contributors
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/sherwyn11"><img src="https://avatars.githubusercontent.com/u/43489167?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Sherwyn D'souza</b></sub></a><br /><a href="" title="">:new_moon_with_face:</a></td>
-    <td align="center"><a href="https://github.com/Darlene-Naz"><img src="https://avatars.githubusercontent.com/u/46684660?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Darlene Nazareth</b></sub></a><br /><a href="" title="">:snowflake:</a></td>
-    <td align="center"><a href="https://github.com/CassiaVaz"><img src="https://avatars.githubusercontent.com/u/54650944?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Cassia Vaz</b></sub></a><br /><a href="" title="">:sparkles:</a></td></td>
-  </tr>
- </table>
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-
-[MIT License Link](https://github.com/sherwyn11/Pharma-Chain/blob/master/LICENSE)
+<img src="assets/AVF1.png"/>
+<img src="assets/WFF.JPG"/>
